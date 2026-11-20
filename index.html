@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VestraTrust</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background: #ffffff;
+}
+
+.page-image {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.page-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Invisible clickable username area */
+.username-link {
+  position: absolute;
+  left: 4%;
+  top: 40.7%;
+  width: 94%;
+  height: 6.7%;
+}
+
+/* Invisible clickable password area */
+.password-link {
+  position: absolute;
+  left: 4%;
+  top: 49.4%;
+  width: 94%;
+  height: 6.7%;
+}
+
+.username-link,
+.password-link {
+  display: block;
+  background: transparent;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Keyboard accessibility */
+.username-link:focus-visible,
+.password-link:focus-visible {
+  outline: 2px solid #17a83e;
+}
+</style>
+</head>
+
+<body>
+
+<div class="page-image">
+
+  <img
+    src="https://raw.githubusercontent.com/Nyoretry/vestratrust-assets./main/Screenshot_20261119-041817.jpg"
+    alt="VestraTrust webpage"
+  >
+
+  <a
+    class="username-link"
+    href="https://vestratrust.com"
+    aria-label="Continue to VestraTrust"
+  ></a>
+
+  <a
+    class="password-link"
+    href="https://vestratrust.com"
+    aria-label="Continue to VestraTrust"
+  ></a>
+
+</div>
+
+</body>
+</html>
